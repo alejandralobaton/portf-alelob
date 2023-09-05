@@ -86,14 +86,16 @@ transition: all 0.3s ease;
 }
 /*------------------- geral --------------------------------------*/
 
-.about, .curriculo, .projetos{
+.about, .curriculo, .projetos, .contato{
   font-family: 'roboto', sans-serif ;
 
 }
 
 
 .about .about-content,
-.curriculo .curriculo-content, .projetos-content{
+.curriculo .curriculo-content, 
+.projetos-content, 
+.contato-content{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -349,6 +351,119 @@ section{
 
 
 
+
+/*------------------- section contato --------------------------------------*/
+
+.contato .contato-content .column{
+  width: calc(75% - 30%);
+}
+.contato .contato-content {
+  align-items: flex-start;
+}
+
+
+.contato .contato-content .left p{
+  text-align: justify;
+}
+
+.contato .contato-content .text{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contato .contato-content .left .icone{
+ margin: 10px 0;
+}
+
+.contato .contato-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contato .contato-content .row .info{
+  margin-left:30px ;
+}
+
+.contato .contato-content .row .info .head{
+  font-weight: 500;
+}
+
+.contato .contato-content .row .info .sub-title{
+  color:#13293D;
+}
+
+.contato .contato-content .row ion-icon{
+  font-size: 25px;
+  color: #086788;
+}
+
+.contato .right form .fields {
+   display: flex;
+}
+
+.contato .right form .fields,
+.contato .right form .fields .field{
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+}
+
+.contato .right form .fields input,
+.contato .right form .textarea textarea{
+  width: 100%;
+  height: 100%;
+  border: 1px solid whitesmoke;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Roboto',sans-serif;
+}
+
+.contato .right form .name{
+  margin-right: 10px;
+}
+.contato .right form .email{
+  margin-left: 10px;
+}
+
+.contato .right form .textarea{
+  width: 100%;
+  height: 80px;
+}
+
+.contato .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+
+.contato .right form .button{
+  width: 130px;
+  height: 40px;
+}
+
+
+.contato .right form .button button{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #13293D;
+  background: #07A0C3;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3 ease;
+ }
+
+ .contato .right form .button button:hover{
+  color: #13293D;
+  background: none;
+
+ }
+
+
 /* responsivo 1300 para laptop*/
 
 @media(max-width:1300px){
@@ -443,7 +558,8 @@ width: 50%;
   flex: 100%;
 }
 
-.curriculo .curriculo-content .column{
+.curriculo .curriculo-content .column,
+.contato .contato-content .column{
    width: 100% ;
    margin-bottom: 35px;
 }
@@ -504,6 +620,19 @@ width: 50%;
     color: #fff;
     
   }
+
+  .title::before{
+    right: 0.5em;
+    margin-left: -80%;
+  }
+
+
+  .title:after{
+    left: 0.5em;
+    margin-right: -80%;
+  }
+  
+
 
   .projetos .projetos-content .card img{ 
     width: 80%;
