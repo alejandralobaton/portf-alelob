@@ -15,6 +15,7 @@
 
 body{
   background-color:#E8F1F2 ;
+  
 
 }
 
@@ -442,6 +443,7 @@ section{
 .contato .right form .button{
   width: 130px;
   height: 40px;
+  
 }
 
 
@@ -471,6 +473,10 @@ section{
   margin-left: 0;
  }
 
+ .projetos .projetos-content .card img{ 
+  width: 80%;
+
+}
  
 
 
@@ -514,7 +520,7 @@ section{
   height: 100vh;
   margin: 0;
   background-color: #FFF1D0 ;
-   width: 100%; 
+  width: 100%; 
   max-width: 150px;
   padding: 150px 10px;
   transition: 0.5s ease;
@@ -603,14 +609,23 @@ width: 50%;
 
 @media (max-width:500px){
 
+  .navbar  .home{
+    max-width:500px ;
+   
+  }
 
  .home  {
-  background: url(imagens/pexels-photo-1181673.jpeg) ;
+  background: url(imagens/pexels-photo-1181673.jpeg);
   background-size: cover;
 
  }
+
+ .home .home-content .text-1{
+  font-size: 27px;
   
-  .home .home-content .text-2{
+}
+  
+ .home .home-content .text-2{
     font-size: 50px;
     
   }
