@@ -175,7 +175,7 @@ section{
   background-color: #086788;
   content: "";
   display: inline-block;
-  height: 1px;
+  height: 5px;
   position: relative;
   vertical-align: middle;
   width: 50%;
@@ -353,7 +353,7 @@ section{
 
 
 
-/*------------------- section contato --------------------------------------*/
+/*------------------- section contato / formulario --------------------------------------*/
 
 .contato .contato-content .column{
   width: calc(75% - 30%);
@@ -370,7 +370,7 @@ section{
 .contato .contato-content .text{
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .contato .contato-content .left .icone{
@@ -408,19 +408,19 @@ section{
 .contato .right form .fields .field{
   width: 100%;
   height: 45px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .contato .right form .fields input,
 .contato .right form .textarea textarea{
   width: 100%;
-  height: 100%;
-  border: 1px solid whitesmoke;
+  height: 75%;
+  border: 2px solid #07A0C3;
   border-radius: 6px;
   outline: none;
-  padding: 0 15px;
   font-size: 17px;
   font-family: 'Roboto',sans-serif;
+  
 }
 
 .contato .right form .name{
@@ -432,18 +432,18 @@ section{
 
 .contato .right form .textarea{
   width: 100%;
-  height: 80px;
+  height: 120px;
 }
 
 .contato .right form .textarea textarea{
   padding-top: 10px;
-  resize: none;
+  resize: vertical;
 }
 
 .contato .right form .button{
   width: 130px;
   height: 40px;
-  
+      
 }
 
 
@@ -456,6 +456,7 @@ section{
   font-size: 18px;
   font-weight: 500;
   border-radius: 6px;
+  cursor: pointer;
   transition: all 0.3 ease;
  }
 
@@ -465,6 +466,22 @@ section{
 
  }
 
+ button:disabled{
+ cursor: not-allowed;
+ background: #555b69;
+ }
+
+ .success, .error{
+  text-align: center;
+ }
+ 
+ .success{
+  color:#086788;
+ }
+
+ .error{
+  color:#DD1C1A;
+ }
 
 /* responsivo 1300 para laptop*/
 
@@ -600,6 +617,12 @@ width: 50%;
   .home .home-content .text-3{
     font-size: 32px;
     
+  }
+
+  .title{
+    color:#07A0C3;
+    text-decoration:underline red;
+
   }
 
 

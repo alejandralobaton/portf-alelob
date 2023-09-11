@@ -236,25 +236,28 @@
          </div> <!--coluna esquerda-->
          <div class="column right">
               <div class="text">Mensagem</div>
-              <form action="#">
+              <form action="https://formsubmit.co/ajax/alejandralobaton@gmail.com" method="POST" data-form>
                  <div class="fields">
                     <div class="field name">
-                        <input type="text" placeholder="Nome completo" required>
+                        <label for="name">Nome completo</label>
+                        <input type="text"  autocomplete="given-name" name="Nome completo" id="name" required />
                     </div>
                     
                     <div class="field email">
-                        <input type="email" placeholder="Correio electrônico" required>
+                        <label for="email">E-mail</label>
+                        <input type="email"  autocomplete="given-name" name="Correio electrônico" id="email" required />
                     </div>
                     
                  </div>
                                   
-                  <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="Escrever mensagem"></textarea>
+                  <div class="field textarea" >
+                        <label for="mensagem">Mensagem</label> 
+                        <textarea  name="Escrever mensagem" id="mensagem" required /></textarea>
                     </div>
                     
                     <div class="button">
-                        <button type="submit">Enviar</button>
-                    </div>
+                        <button type="submit" id="click" data-button >Enviar</button>
+                    </div> 
                     
                  </div>
 
