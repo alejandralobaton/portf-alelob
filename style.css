@@ -182,12 +182,12 @@ section{
 }
 .title::before{
   right: 0.5em;
-  margin-left: -30%;
+  margin-left: -40%;
 }
 
 .title:after{
   left: 0.5em;
-  margin-right: -30%;
+  margin-right: -33%;
 }
 
 
@@ -550,6 +550,17 @@ section{
   padding: 10px 30px;
 }
 
+
+.title:before,
+.title:after{
+
+  content: "";
+  display: none;
+    
+}
+
+
+
 .about .about-content .column{
 width: 50%;
 }
@@ -591,11 +602,7 @@ width: 50%;
     
   }
 
-  
-.home .home-content a {
-  font-size: 20px;
-  
-}
+
 .projetos .projetos-content .card{
   width: 100%;
 
