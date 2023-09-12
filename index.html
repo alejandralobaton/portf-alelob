@@ -8,17 +8,20 @@
 
 </head>
 <body>
+    <div class="scroll-up-btn">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>   
     <div class="navbar">
     <div class="max-width">
         <div class="logo"> <a href="#">Port<span>fólio</span></a></div>
         <div class="menu-btn active">
             <ion-icon name="grid"></ion-icon> </div>
         <ul  class="menu active" >
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Currículo</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#curriculo">Currículo</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
 
         
@@ -31,9 +34,23 @@
             <div class="home-content">
                 <div class="text-1">Olá, meu nome é </div>
                 <div class="text-2"> Alejandra Lobaton </div>
-                <div class="text-3">eu sou <span>Desenvolvedora</span></div>
-                <a href="#">Contratar-me</a>
+                <div class="text-3">eu sou <span class="typing"></span></div>
+                <a href="#contato">Contratar-me</a>
             </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+            <script>
+        
+                var typing = new Typed (".typing" ,{
+        
+                    strings : ["Youtuber", "Web Developer", "Blogger", "Freelancer", "Designer"],
+                    typeSpeed: 100,
+                    backSpeed:60,
+                    loop:true
+                });
+            </script> 
+
             <div class="redes">
                
                 <a href="https://instagram.com/alejandralobaton30" target="_blank"><img src="imagens/instagram.png" alt="github" width="54px" height="54px"></a>              
@@ -197,7 +214,7 @@
 
 <!--sessão contato-->
     
-<section class="about contato" id="about">
+<section class="about contato" id="contato">
     <div class="max-width">
         <h2 class="title">Contato</h2>
            <div class="contato-content">
@@ -219,7 +236,7 @@
                     <ion-icon name="earth-outline"></ion-icon>       
                     <div class="info">
                         <div class="head">Endereço</div>
-                        <div class="sub-title">Salvador,Bahia</div>
+                        <div class="sub-title">Salvador, Bahia</div>
                     </div>
                 </div>     
                    
@@ -274,8 +291,11 @@
 </section>
 
 
+<!--sessão footer-->
 
-
+<footer>
+    <span>Criado por Ale Lob | Todos os direitos reservados 2023</span>
+</footer>
 
 
 
@@ -289,6 +309,7 @@
     <script  nomodule  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="script.js"> </script>
+   
     
     
     
