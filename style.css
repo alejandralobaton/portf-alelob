@@ -154,6 +154,10 @@ transition: all 0.3s ease;
   margin: auto 0 auto 40px;
 }
 
+.home-content{
+  margin-top: 65px;
+}
+
 .home .home-content .text-1{
   font-size: 27px;
 }
@@ -196,6 +200,11 @@ transition: all 0.3s ease;
   padding: 10px;
 }
 
+.redes div{
+  margin-left: 900px;
+  
+  
+}
 
 
 /*------------------- section sobre mim --------------------------------------*/
@@ -452,7 +461,7 @@ section{
   border: 2px solid #07A0C3;
   border-radius: 6px;
   outline: none;
-  font-size: 17px;
+  font-size: 20px;
   font-family: 'Roboto',sans-serif;
   
 }
@@ -521,16 +530,18 @@ section{
 
 /*------------------- section footer -------------------------------------*/
 
-footer{
-  background:#07A0C3;
-  padding: 20px 23px ;
-  color:#E8F1F2;
+footer {
+  background:#13293D;
+  padding: 20px 23px;
+  color: #fff;
   text-align: center;
+  
 }
 
-
-
-
+footer span{
+   color: #fff;
+  
+}
 
 
 /* responsivo 1300 para laptop*/
@@ -680,7 +691,10 @@ width: 50%;
   width: 100%;
 
 }
-
+ 
+footer img{
+  margin-left: -100px;
+}
   
 }
 
@@ -727,13 +741,18 @@ width: 50%;
     margin-right: -80%;
   }
   
-
-
+ 
   .projetos .projetos-content .card img{ 
     width: 80%;
   
   }
   
+.contato .right form .fields input,
+.contato .right form .textarea textarea{
+  font-size: 12px;
+}
+    
+
 }
 
 
