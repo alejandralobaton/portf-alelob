@@ -200,11 +200,7 @@ transition: all 0.3s ease;
   padding: 10px;
 }
 
-.redes div{
-  margin-left: 900px;
-  
-  
-}
+
 
 
 /*------------------- section sobre mim --------------------------------------*/
@@ -629,6 +625,14 @@ footer span{
 }
 
 
+.redes div{
+  margin-left: -1px;
+  
+  
+  
+}
+
+
 .title:before,
 .title:after{
 
@@ -680,6 +684,7 @@ width: 50%;
     
   }
 
+ 
   .title{
     color:#07A0C3;
     text-decoration:underline red;
@@ -729,7 +734,7 @@ footer img{
     color: #fff;
     
   }
-
+  
   .title::before{
     right: 0.5em;
     margin-left: -80%;
